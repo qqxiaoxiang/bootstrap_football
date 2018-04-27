@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>球星页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script type="text/javascript" src="js/boot.js"> 
+</script>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style type="text/css">
+      header div{float:left;width:69%;}
+        header li{width:16%;margin-left:20px;display:inline;}
+        header li a{display:inline;font-size:1.2em;}
+        header img{width:30%;height:99px;}
+        header{background:#f77;overflow:hidden;}
+        header div p{margin-left:20px;font-size:1em;}
+        header span{margin-right:2px;font-size:0.7em;}
+        #content img{height:230px;}
+        #content .caption{background:#eee;}
+       
+        @media screen and (min-width:980px){
+            body{width:980px; margin:0 auto;}
+
+           }
+      @media screen and (max-width:500px){
+header div{width:100%;}
+header img{display:block;width:100%;height:70px;}
+header li{margin-left:5px;font-size:0.7em;}
+header div p{margin-left:5px;font-size:0.66em;}
+ #content img{height:160px;}
+
+         @media screen and (max-width:340px){
+                 #home{display:none;}
+         }
+}
+
+</style>
+</head>
+<body>
+ <header>
+<img src="image/logo3.png" alt="logo" style="margin-left:0;float:left">
+<div>
+  <ul class="nav nav-pills text-center text-nowrap" style="margin-top:0;width:100%">
+    <li><a href="index.html"><span class="glyphicon glyphicon-home" id="home"></span>主页</a></li>
+    <li class="active "><a href="#">球星页</a></li>
+    <li><a href="country.html">国家页</a></li>
+    <li class="disabled" title="请在主页注册登录"><a href="#" >登陆</a></li>
+     <li class="disabled" title="请在主页注册登录"><a href="#" >注册</a></li>
+   </ul>
+<p><span class="h5">说明:</span>这是一个基于bootstrap开发的关于俄罗斯世界杯的网站,利用bootstrap可以快速开发良好布局实现特效功能，链接自官网上的cdn，如果出问题请联系站长或访问备用地址：http://lujiax.gitee.io/text_page</p>
+     </div>  
+</header>
+
+<content id="content">
+<div class="row">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tua.png"
+                 alt="梅西">
+            <div class="caption">
+             <p class="" data-toggle="collapse" data-target="#demo1">
+             <span class="h4">梅西</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo1" class="collapse">
+                    阿根廷足球运动员,世界上最好的球员之一，司职前锋，现效力于巴塞罗那足球俱乐部。梅西被IFFHS评为2013年世界职业联赛的最佳射手奖  2015年8月27日，获得欧洲最佳球员2016年1月12日，梅西荣膺2015年度FIFA金球奖，五度得奖创纪录。
+                    <span class="" data-toggle="collapse" data-target="#demo1">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tub.png"
+                 alt="C罗">
+            <div class="caption">
+               <p class="" data-toggle="collapse" data-target="#demo2">
+             <span class="h4">C罗</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo2" class="collapse">
+                    葡萄牙足球运动员,世界上最好的球员之一，司职前锋，现效力于皇家马德里足球俱乐部。然而那时的他远称不上健硕,C罗招牌式的“踩单车”过人动作、力量十足的射门、在皇马等豪门俱乐部出色的表现，使他逐渐成为葡萄牙队新的领军人物。
+                    <span class="" data-toggle="collapse" data-target="#demo2">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tuc.png"
+                 alt="内马尔">
+            <div class="caption">
+               <p class="" data-toggle="collapse" data-target="#demo3">
+             <span class="h4">内马尔</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo3" class="collapse">
+                    巴西足球运动员,世界上最好的球员之一，司职前锋，现效力巴黎圣日耳曼足球俱乐部。是当下最受关注的足球明星。作为新生代的代表人物，他如今取得的成就，不仅因为在绿茵场上的表现，也因其在社交网络和商业市场的超凡影响力。
+                    <span class="" data-toggle="collapse" data-target="#demo3">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tud.png"
+                 alt="莱万">
+            <div class="caption">
+               <p class="" data-toggle="collapse" data-target="#demo4">
+             <span class="h4">莱万</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo4" class="collapse">
+                    波兰足球运动员,世界上最好的球员之一，司职前锋，现效力拜仁慕尼黑足球俱乐部。这位波兰前锋集速度、技术、灵巧、强壮、弹跳等所有前锋需要的素质为一身，堪称现代前锋的模板莱万是足坛的最佳射手，他的能力更加全面&nbsp;投他一票
+                    <span class="" data-toggle="collapse" data-target="#demo4">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tue.png"
+                 alt="皮克">
+            <div class="caption">
+               <p class="" data-toggle="collapse" data-target="#demo5">
+             <span class="h4">皮克</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo5" class="collapse">
+                   西班牙足球运动员,世界上最好的球员之一，现效力巴塞罗那足球俱乐部。因为年少时基本活跃于中前场，不同于一般的后卫球员，皮克的脚下技术细腻，甚至在盘带和射门方面也有着很高的造诣，在危急时候让皮克出任中锋&nbsp;投他一票
+                    <span class="" data-toggle="collapse" data-target="#demo5">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tuf.png"
+                 alt="德布劳内">
+            <div class="caption">
+               <p class="" data-toggle="collapse" data-target="#demo6">
+             <span class="h4">德布劳内</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo6" class="collapse">
+                    比利时足球运动员,世界上最好的球员之一，司职中锋，现效力曼城足球俱乐部。作为一名中前场全能的球员，德布劳内十分出色，在过往打边锋的时候喜欢内切后用右脚射门，因而有个“狂飙魔鬼”的绰号。&nbsp;投他一票
+                    <span class="" data-toggle="collapse" data-target="#demo6">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tui.png"
+                 alt="布冯">
+            <div class="caption">
+               <p class="" data-toggle="collapse" data-target="#demo7">
+             <span class="h4">布冯</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo7" class="collapse">
+                    意大利足球运动员,世界上最好的球员之一，司职门将，效力尤文图斯足球俱乐部。布冯作为一名世界级门将，他不喜欢扑球脱手，身材的优势也使得不畏惧接高空球。他能够迅速对对方前锋的射门做出反应&nbsp;投他一票
+                    <span class="" data-toggle="collapse" data-target="#demo7">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <img src="image/tuh.png"
+                 alt="苏亚雷斯">
+            <div class="caption">
+               <p class="" data-toggle="collapse" data-target="#demo8">
+             <span class="h4">苏亚雷斯</span>&nbsp;点击下拉了解&nbsp<span class="glyphicon glyphicon-arrow-down"></span></p>
+                <p id="demo8" class="collapse">
+                    乌拉圭足球运动员,世界上最好的球员之一，司职前锋，现效力巴塞罗那足球俱乐部。苏亚雷斯是乌拉圭历史上最具天赋的足球天才之一苏亚雷斯是一个顶级球员，他能带领球队胜利，很多球队希望得到他 &nbsp;投他一票
+                    <span class="" data-toggle="collapse" data-target="#demo8">
+             上拉&nbsp;<span class="glyphicon glyphicon-arrow-up"></span></span> </p>
+            </div>
+        </div>
+    </div>
+</div>
+</content>
+</body>
+</html>

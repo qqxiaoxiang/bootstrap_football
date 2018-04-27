@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>bootstrap</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script type="text/javascript" src="js/boot.js"> 
+</script>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+        <style type="text/css">
+        
+        header div{float:left;width:69%;}
+        header li{width:16%;margin-left:20px;display:inline;}
+        header li a{display:inline;font-size:1.2em;}
+        header img{width:30%;height:99px;}
+        header{background:#f77;overflow:hidden;}
+        header div p{margin-left:20px;font-size:1em;}
+        header span{margin-right:2px;font-size:0.7em;}
+        #myModal1,#myModal{margin:0 auto; margin-top:100px;position:relative;}
+       
+        #content{width:100%;float:left;}
+        #content img{width:100%;height:500px;}
+        #content p{background:#aaa;padding:8px;font-size:0.94em;padding-bottom:0;}
+         #content p span{font-size:1.2em;}
+         #footer{width:100%; height:auto;margin-bottom:0px;float:left;font-size:1em;background:#f66;}
+        @media screen and (min-width:980px){
+            body{width:980px; margin:0 auto;}
+            #content img{height:600px;}
+
+           }
+      @media screen and (max-width:500px){
+header div{width:100%;}
+header img{display:block;width:100%;height:70px;}
+header li{margin-left:5px;font-size:0.7em;}
+header div p{margin-left:5px;font-size:0.66em;}
+ #myModal1,#myModal{ margin-top:60px;}
+        #content{width:100%;}
+        #content img{width:100%;height:auto;}
+         #content p span{font-size:1em;color:#555;}
+         #content p{font-size:0.8em;}
+         #a1,#a2{margin-top:180px;}
+         #footer{height:auto;font-size:0.7em;}
+       }
+         @media screen and (max-width:340px){
+#a1,#a2{margin-top:240px;}
+ #content p span{font-size:1em;color:#555;}
+         #content p{font-size:0.7em;}
+         #home{display:none;}
+         }
+
+
+</style>
+   </head>
+  <body>
+   <header>
+<img src="image/logo3.png" alt="logo" style="margin-left:0;float:left">
+<div>
+  <ul class="nav nav-pills text-center text-nowrap" style="margin-top:0;width:100%">
+    <li class="active "><a href="#"><span class="glyphicon glyphicon-home" id="home"></span>主页</a></li>
+    <li class=""><a href="star.html">球星页</a></li>
+    <li><a href="country.html">国家页</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#myModal" >登陆</a></li>
+     <li><a href="#" data-toggle="modal" data-target="#myModal1">注册</a></li>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h5 class="modal-title" id="myModalLabel">
+          登陆
+        </h5>
+      </div>
+      <div class="modal-body">
+    <form class="bs-example bs-example-form" role="form">
+        <div class="input-group input-group-xs">
+            <span class="input-group-addon">昵称</span>
+            <input type="text" class="form-control" placeholder="梅西">
+        </div>
+        <br>
+        <div class="input-group input-group-xs">
+         <span class="input-group-addon">密码</span>
+            <input type="password" class="form-control">
+           
+        </div>
+        <br>
+    </form>
+</div>
+  <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">登陆
+        </button>
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">
+          关闭
+        </button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h5 class="modal-title" id="myModalLabel1">
+          注册
+        </h5>
+      </div>
+      <div class="modal-body">
+ 
+<form class="bs-example bs-example-form" role="form">
+        <div class="input-group input-group-xs">
+            <span class="input-group-addon">昵称</span>
+            <input type="text" class="form-control" placeholder="梅西">
+        </div>
+        <br>
+        <div class="input-group input-group-xs">
+         <span class="input-group-addon">密码</span>
+            <input type="password" class="form-control">
+            </div><br>
+        <div class="input-group input-group-xs">
+         <span class="input-group-addon">确认密码</span>
+            <input type="password" class="form-control">
+           
+        </div>
+        <br>
+    </form>
+</div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">注册
+        </button>
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">
+          关闭
+        </button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+   </ul>
+      <p><span class="h5">说明:</span>这是一个基于bootstrap开发的关于俄罗斯世界杯的网站,利用bootstrap可以快速开发良好布局实现特效功能，链接自官网上的cdn，如果出问题请联系站长或访问备用地址：http://lujiax.gitee.io/text_page
+</p>
+    
+     </div>
+     
+</header>
+
+<content id="content">
+<div id="myCarousel" class="carousel slide">
+  <!-- 轮播（Carousel）指标 -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>   
+  <!-- 轮播（Carousel）项目 -->
+  <div class="carousel-inner">
+    <div class="item active">
+   <p><span>世界杯概述:</span>国际足联世界杯（FIFA World Cup）简称“世界杯”，是世界上最高荣誉、最高规格、最高竞技水平、最高知名度的足球比赛，与奥运会并称为全球体育两大最顶级赛事，影响力和转播覆盖率超过奥运会的全球最大体育盛事。
+世界杯是全球各个国家在足球领域最梦寐以求的神圣荣耀，也是各个国家（或地区）所有足球运动员的终极梦想。世界杯每四年举办一次，任何国际足联会员国（地区）都可以派出代表队报名参加这项赛事。世界杯是世界足球运动发展推广普及的源头和根本，所以也被誉为“生命之杯”。巴西是夺得该项荣誉最多的球队，共获得5次世界杯冠军，并且在3夺世界杯后永久地保留了前任世界杯雷米特杯。现在的世界杯是大力神杯，两者都统称为世界杯。</p>
+      <img src="image/tu0.jpg" alt="First slide" >
+      <div class="carousel-caption">世界杯概述</div>  
+    </div>
+    <div class="item">
+   <p><span>俄罗斯世界杯:</span>2018年俄罗斯世界杯是第21届世界杯足球赛。比赛将于2018年6月14日至7月15日在俄罗斯境内11座城市中的12座球场内举行。
+这是世界杯首次在俄罗斯境内举行，也是世界杯首次在东欧国家举行，同时是继2006年德国世界杯后世界杯再一次在欧洲举行。俄罗斯世界杯共有32支球队参加比赛；除去东道主俄罗斯自动获得参赛资格以外，其他31支球队将通过参加预选赛获得参赛资格。世界杯期间，将在俄罗斯境内举行64场比赛角逐出冠军。2014年7月13日俄罗斯总统普京和巴西总统迪尔玛·罗塞夫交接世界杯主办权。
+ 2017年12月1日，2018年世界杯足球赛决赛圈抽签仪式在俄罗斯莫斯科克里姆林宫举行，32支参赛球队被分入8个小组 。</p>
+      <img src="image/tu1.jpg" alt="Second slide" >
+      <div class="carousel-caption">俄罗斯世界杯</div>
+   </div>
+    <div class="item">
+    <p><span>战争与足球:</span>足球促进世界体育文化交流避免战争，足球无国界无贫富，人人平等。
+身穿用塑料袋自制的梅西10号球衣的小男孩是阿富汗东部加兹尼省的加格霍里地区的一个贫困家庭的男孩名叫穆塔尔扎，他的父亲阿里夫·阿赫马迪表示：“这孩子真的很喜欢梅西和足球，我们买不起球衣，因为我们只是普通农民。”生在战乱的国度，足球成为他唯一的玩具。由于买不起球衣，他用塑料袋自制了梅西的阿根廷10号球衣。穆塔尔扎的照片感动了许多网友和球迷，不久之后，他便收到了梅西赠送的亲笔签名球衣。 </p>
+      <img src="image/tu2.png" alt="Third slide">
+      <div class="carousel-caption">战争与足球</div>
+       </div>
+      <div class="item">
+      <p><span>本站活动:</span>vivo作为全球领先的手机品牌，希望通过赞助世界杯足球赛，将vivo坚持的理念、精神传递给消费者，与广大消费者更好的沟通互动，树立vivo国际形象。同时通过尖端、创新的产品和优质的用户体验服务，让每一名球迷用户感受到前所未有的品质饕餮。”参与本站2018世界杯最出色球星与夺冠国家预测投票互动的用户，我们会选出70%用户赠送vivo与2018世界杯的纪念礼品，包括：纪念版手机，吉祥物，足球，球衣球鞋等--最终解释权归站长所有。</p>
+      <img src="image/tu3.jpeg" alt="Four slide">
+      <div class="carousel-caption">本站活动</div>
+      </div>
+  </div>
+  <!-- 轮播（Carousel）导航 -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" id="a1">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" id="a2">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+  </a>
+</div> 
+
+</content>
+<footer id="footer">
+    <p align="center">       
+                 友情链接：<a>天下足球</a>   &nbsp  <a>疯狂的足球</a>&nbsp      <a>懂球帝</a>  &nbsp&nbsp &nbsp&nbsp       版权所有：个人   &nbsp&nbsp&nbsp&nbsp联系方式：QQ1575308685
+    </p>
+</footer>
+    </body>
+</html>

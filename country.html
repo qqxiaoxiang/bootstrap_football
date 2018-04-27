@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script type="text/javascript" src="js/boot.js"> 
+</script>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <style type="text/css">
+      header div{float:left;width:69%;}
+        header li{width:16%;margin-left:20px;display:inline;}
+        header li a{display:inline;font-size:1.2em;}
+        header img{width:30%;height:99px;}
+        header{background:#f77;overflow:hidden;}
+        header div p{margin-left:20px;font-size:1em;}
+        header span{margin-right:2px;font-size:0.7em;}
+        #div1{width:63%;}
+        #div2{width:32%;margin-left:30px;}
+        table{background:#ccc;}
+       @media screen and (min-width:980px){
+            body{width:980px; margin:0 auto;}
+
+           }
+      @media screen and (max-width:500px){
+header div{width:100%;}
+header img{display:block;width:100%;height:70px;}
+header li{margin-left:5px;font-size:0.7em;}
+header div p{margin-left:5px;font-size:0.66em;}
+
+
+}
+    @media screen and (max-width:340px){
+                 #home{display:none;}
+         }
+@media screen and (max-width:900px){
+    #div1{width:100%;}
+    #div1 img{margin:0 auto;}
+#div2{width:100%;margin:5px;}
+#div2 form{margin-left:10px;}
+}
+
+</style>
+</head>
+<body>
+ <header>
+<img src="image/logo3.png" alt="logo" style="margin-left:0;float:left">
+<div>
+  <ul class="nav nav-pills text-center text-nowrap" style="margin-top:0;width:100%">
+    <li><a href="index.html"><span class="glyphicon glyphicon-home" id="home"></span>主页</a></li>
+    <li><a href="star.html">球星页</a></li>
+    <li class="active "><a href="country.html">国家页</a></li>
+    <li class="disabled" title="请在主页注册登录"><a href="#" >登陆</a></li>
+     <li class="disabled" title="请在主页注册登录"><a href="#" >注册</a></li>
+   </ul>
+<p><span class="h5">说明:</span>这是一个基于bootstrap开发的关于俄罗斯世界杯的网站,利用bootstrap可以快速开发良好布局实现特效功能，链接自官网上的cdn，如果出问题请联系站长或访问备用地址：http://lujiax.gitee.io/text_page</p>
+     </div>  
+</header>
+
+    <table class="table table-bordered table-striped">
+    <caption style="font-size:1.5em;text-align:center;">往届冠军</caption>
+    <thead>
+        <tr>
+            <th>届数</th>
+            <th>举办地</th>
+            <th>冠军</th>
+            <th>亚军</th>
+            <th>季军</th>
+            <th>殿军</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>11</td>
+            <td>阿根廷</td>
+            <td>阿根廷</td>
+            <td>荷兰</td>
+            <td>巴西</td>
+            <td>意大利</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>西班牙</td>
+            <td>意大利</td>
+            <td>联邦德国</td>
+            <td>法国</td>
+            <td>比利时</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>墨西哥</td>
+            <td>阿根廷</td>
+            <td>联邦德国</td>
+            <td>法国</td>
+            <td>比利时</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>意大利</td>
+            <td>联邦德国</td>
+            <td>阿根廷</td>
+            <td>意大利</td>
+            <td>英格兰</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>美国</td>
+            <td>巴西</td>
+            <td>意大利</td>
+            <td>瑞典</td>
+            <td>保加利亚</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>法国</td>
+            <td>法国</td>
+            <td>巴西</td>
+            <td>克罗地亚</td>
+            <td>荷兰</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>韩国·日本</td>
+            <td>巴西</td>
+            <td>德国</td>
+            <td>土耳其</td>
+            <td>韩国</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>德国</td>
+            <td>意大利</td>
+            <td>法国</td>
+            <td>德国</td>
+            <td>葡萄牙</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>南非</td>
+            <td>西班牙</td>
+            <td>荷兰</td>
+            <td>德国</td>
+            <td>乌拉圭</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>巴西</td>
+            <td>德国</td>
+            <td>阿根廷</td>
+            <td>荷兰</td>
+            <td>巴西</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="pull-left" id="div1">
+<img src="image/tua1.png" alt="tuai" class="img-responsive">
+</div>
+<div class="pull-left" style="border:1px dotted #555" id="div2">
+<form action="" role="form">
+<label for="name">夺冠预测投票</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"class="btn btn-default">提交</button>
+<br>
+<label for="name">冠军</label><br>
+ <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 西班牙
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 巴西</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 德国
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 英格兰</label><br>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>克罗地亚
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 葡萄牙</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 阿根廷
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 瑞士</label><br>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 法国
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 乌拉圭</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 俄罗斯
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 中国</label>
+<br>
+        <label for="name">亚军</label><br>
+ <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 西班牙
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 巴西</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 德国
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 英格兰</label><br>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>克罗地亚
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 葡萄牙</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 阿根廷
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 瑞士</label><br>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 法国
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 乌拉圭</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 俄罗斯
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 中国</label>
+<br>
+        <label for="name">季军</label><br>
+ <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 西班牙
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 巴西</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 德国
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 英格兰</label><br>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>克罗地亚
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 葡萄牙</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 阿根廷
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 瑞士</label><br>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 法国
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 乌拉圭</label>
+         <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 俄罗斯
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 中国</label>
+        </form>
+</div>
+    </body>
+</html>
